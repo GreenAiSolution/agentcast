@@ -24,7 +24,7 @@ Turn any Claude Code or Codex session already on your disk into a shareable, scr
 ---
 
 ```bash
-pip install agentcast      # or: uvx agentcast ui
+pip install git+https://github.com/GreenAiSolution/agentcast
 agentcast ui               # every session you've ever run, in your browser
 ```
 
@@ -46,13 +46,14 @@ That's it. No account, no upload, no config. Claude Code and Codex already write
 ## Install
 
 ```bash
-pip install agentcast
+pip install git+https://github.com/GreenAiSolution/agentcast
 # or run without installing:
-uvx agentcast ui
-pipx run agentcast ui
-# or straight from the repo (pure stdlib, nothing to build):
+uvx --from git+https://github.com/GreenAiSolution/agentcast agentcast ui
+# or straight from a clone (pure stdlib, nothing to build):
 git clone https://github.com/GreenAiSolution/agentcast && cd agentcast && python3 -m agentcast ui
 ```
+
+(PyPI package coming; until then install from GitHub as above.)
 
 Requires Python 3.9+. **Zero dependencies** — standard library only. Works on macOS, Linux and Windows.
 
